@@ -1,5 +1,9 @@
 
-sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
+<a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
+        src="https://img.shields.io/npm/l/winbox.svg"></a> <img src="https://img.shields.io/badge/language-javascript-red"> <img src="https://img.shields.io/badge/language-css-red">
+        
+        
+        sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
 
 # webos
 An open source, modern, lightweight and customizable css/javascript library to manage the DOM as a MacOS-like window
@@ -8,9 +12,6 @@ manager. This library is based on <a href="https://github.com/nextapps-de/winbox
 <img src="https://github.com/oceansolutionsfr/webos/raw/main/res/Oceans%2C%202025%2C%20WebOS%20Demo.webp" alt="Oceans, 2025, WebOS Screenshot #1">
 
 WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do not post issue for display in smaller resolution.
-
-<a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
-        src="https://img.shields.io/npm/l/winbox.svg"></a>
 
 #### Compatibility
 <div style="width: 100%; text-align: center;">
