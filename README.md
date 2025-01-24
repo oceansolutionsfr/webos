@@ -156,6 +156,8 @@ A best practice is to load the winbox library as async and import the WebOS libr
 > The use of WebOS requires the initialization of a ```WebOS``` instance. The instance is unique for the current page and is shared with all the windows, through the app.webos property. The WebOS instance is not shared between navigator tabs. You can find the reference of the options <a href="#options">here</a>
 
 ```js
+
+        // initialize an option object
         const webos_options = {
             menu: true,
             dock: true,
@@ -166,6 +168,9 @@ A best practice is to load the winbox library as async and import the WebOS libr
         // create a new WebOS instance
         const webos = new WebOS(webos_options)
 
+        // add an app to the webos
+        webos.add(/* see Adding apps section */)
+
         // render the webos in the DOM
         webos.render()
 ```
@@ -173,15 +178,22 @@ A best practice is to load the winbox library as async and import the WebOS libr
 
 ### Adding apps
 
-> The use of WebOS requires the initialization of a ```WebOS``` instance. The instance is unique for the current page and is shared with all the windows, through the app.webos property. The WebOS instance is not shared between navigator tabs.
+> To add apps to WebOS, you must first initialize a ```WebOS``` instance. Once initialized, you can add apps to the OS using the ```add``` method. Only app added before `webos.render()` will be rendered. Refer to the <a href="#app_properties">list of app properties</a>.
 
 ```js
-        // create a new WebOS instance
-        const webos = new WebOS()
+        // initialize an object
+        const app = {
+            id: "calculator",
+            url: "./app/calculator.html",
+            single: true
+        } 
+        
+        // add an app to the webos
+        webos.add(app)
 
-        // render the webos in the DOM
-        webos.render()
+        // ...
 ```
+
 
 ## References
 
@@ -205,7 +217,6 @@ the WebOS repository has the following structure:
 
 The options parameters of ```new WebOS(options)``` is a Javascript object, with the following properties:
 
-
 |Property|Type|Default Value|Description|
 |:--:|:--:|:--:|:--|
 |`menu`|`boolean`|`false`|Display or not the window menu. The window menu is a bar located at the top of the window and displaying global functions and information (by default date and time).|
@@ -213,3 +224,19 @@ The options parameters of ```new WebOS(options)``` is a Javascript object, with 
 |`pad`|`boolean`|`false`|Adding or not the window pad to the list of apps. The window pad is a full screen overlay div with a grid containing the apps icons.|
 |`background`|`string`|`null`|Display or not the window pad. The window pad is a bar located at the bottom of the window and displaying running apps (by default the pad app).|
 
+
+### App Properties
+
+<a name="app_properties"></span>
+
+The app parameters of ```webos.add(app)``` is a Javascript object, with the following properties:
+
+|Property|Type|Default Value|Description|
+|:--:|:--:|:--:|:--|
+|`color_bottom`|`string`|`null`|The app icon bottom color.|
+|`color_top`|`string`|`null`|The app icon top color.|
+|`icon_src`|`string`|`null`|The app icon (an url or a base64 string).|
+|`id`*|`string`|`null`|The app id.|
+|`onclick`*|`function`|`null`| in case no url is specified, the onclick(event, app) function is used.|
+|`single`|`boolean`|`false`|Display or not the app in a separate window.|
+|`url`|`string`|`null`|The app url.|
