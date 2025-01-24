@@ -168,4 +168,4 @@ the WebOS repository has the following structure:
 
 # Support WebOS
 
-sponsor on Paypal: <a href="https://www.paypal.com/ncp/payment/3DY454BLJ8TVW">donate</a>
+sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
