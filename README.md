@@ -5,8 +5,8 @@ sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZME
 An open source, modern, lightweight and customizable css/javascript library to manage the DOM as a MacOS-like window
 manager. This library is based on <a href="https://github.com/nextapps-de/winbox/tree/master">WinBox.js</a>.
 
-![image info](./res/Oceans, 2025, WebOS Screenshot #1.png)
 
+![Oceans, 2025, WebOS Screenshot #1](https://github.com/oceansolutionsfr/webos/raw/main/res/Oceans%2C%202025%2C%20WebOS%20Screenshot%20%231.png)
 
 WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do not post issue for display in smaller resolution.
 
