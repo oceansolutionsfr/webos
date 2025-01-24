@@ -167,8 +167,7 @@ the WebOS repository has the following structure:
 
 
 # suport WebOS
-
-<style>.pp-3DY454BLJ8TVW{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
+[comment]: <> (<style>.pp-3DY454BLJ8TVW{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>)
 <form action="https://www.paypal.com/ncp/payment/3DY454BLJ8TVW" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
   <input class="pp-3DY454BLJ8TVW" type="submit" value="Donate" />
   <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
