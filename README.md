@@ -86,7 +86,7 @@ It demonstrates the following features:
 
 #### get the latest stable build
 
-<table>
+<table style="width: 100%;">
     <tr>
         <td colspan="2">
             <b><u>Non-Bundle:</u></b> (js and css are separated, js includes icons as base64)
@@ -109,12 +109,10 @@ It demonstrates the following features:
         <td>ES6 Modules</td>
         <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/src/js/webos.css" target="_blank">Download</a></td>
     </tr>
-    <tr></tr>
     <tr>
         <td>CSS File (source)</td>
         <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/src/css/webos.css" target="_blank">Download</a></td>
     </tr>
-    <tr></tr>
 </table>
 
 
