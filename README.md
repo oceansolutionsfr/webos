@@ -84,7 +84,42 @@ It demonstrates the following features:
 
 ## Getting Started
 
-### Use
+#### get the latest stable build
+
+<table>
+    <tr>
+        <td colspan="2">
+            <b><u>Non-Bundle:</u></b> (js and css are separated, js includes icons as base64)
+        </td>
+    </tr>
+    <tr>
+        <td>winbox.min.js</td>
+        <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/dist/latest/webos.min.js" target="_blank">Download</a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>winbox.min.css</td>
+        <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/dist/latest/webos.min.css" target="_blank">Download</a></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <br><b><u>Sources:</u></b>  (js and css are separated, js includes icons as base64)
+        </td>
+    </tr>
+    <tr>
+        <td>ES6 Modules</td>
+        <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/src/js/webos.css" target="_blank">Download</a></td>
+        <td>JS source file</td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>CSS File (source)</td>
+        <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/src/css/webos.css" target="_blank">Download</a></td>
+        <td>CSS source style used by the library</td>
+    </tr>
+    <tr></tr>
+</table>
+
 
 ### Contribute
 
@@ -95,7 +130,7 @@ the WebOS repository has the following structure:
 ```
 
 ├── cli/        // node.js CLI utils (versioning, packaging)
-├── dist/       // disitrbution version
+├── dist/       // distribution version
 ├── demo/       // example HTML page using WebOS
 ├── lib/        // third party dependencies
 └── src/        // PHP 8.3 Rest APIs entry point source code
@@ -103,6 +138,5 @@ the WebOS repository has the following structure:
     └── js/     // WebOS javascript sources
 ```
 
-### CSS styles
 
 ### JavaScript References
