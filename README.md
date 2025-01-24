@@ -2,7 +2,12 @@
 An open source, modern, lightweight and customizable css/javascript library to manage the DOM as a MacOS-like window
 manager. This library is based on <a href="https://github.com/nextapps-de/winbox/tree/master">WinBox.js</a>.
 
-WebOS is meant to work on desktop with a min resolution of 1280×720px.
+WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do not post issue for display in smaller resolution.
+
+<a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
+        src="https://img.shields.io/npm/l/winbox.svg"></a>
+
+### Compatibility
 <div style="width: 100%; text-align: center;">
     <table class="bc-table bc-table-web">
         <thead>
@@ -60,11 +65,22 @@ WebOS is meant to work on desktop with a min resolution of 1280×720px.
     </table>
 </div>
 
-<a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
-        src="https://img.shields.io/npm/l/winbox.svg"></a>
 
 
-## Live Examples
+
+## Demo
+
+The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html">. The code of the demo is available in the ```demo``` directory of the WebOS repository. No support is provided for the demo.
+
+Thanks to <a href="https://oceansolutions.fr">oceansolutions.fr</a> for the hosting of the demo.
+
+It demonstrates the following features:
+ - dock
+ - menubar
+ - pad
+ - singe-window apps
+ - external website embeding (provided the target website has a compatible <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors">frame-ancestors</a> policy.)
+ - new tab URL opening
 
 ## Getting Started
 
