@@ -70,16 +70,16 @@ WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do n
 
 ## Demo
 
-The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html">here</a>. The code of the demo is available in the ```demo``` directory of the WebOS repository. No support is provided for the demo.
+The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html" target="_blank">here</a>. The code of the demo is available in the ```demo``` directory of the WebOS repository. No support is provided for the demo.
 
-Thanks to <a href="https://oceansolutions.fr">oceansolutions.fr</a> for the hosting of the demo.
+Thanks to <a href="https://oceansolutions.fr" target="_blank">oceansolutions.fr</a> for the hosting of the demo.
 
 It demonstrates the following features:
  - dock
  - menubar
  - pad
  - singe-window apps
- - external website embeding (provided the target website has a compatible <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors">frame-ancestors</a> policy.)
+ - external website embeding (provided the target website has a compatible <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors" target="_blank">frame-ancestors</a> policy.)
  - new tab URL opening
 
 ## Getting Started
