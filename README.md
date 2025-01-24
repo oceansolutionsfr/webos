@@ -1,9 +1,8 @@
 
-<a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
+<a href="https://github.com/oceansolutionsfr/webos/LICENSE.md"><img
         src="https://img.shields.io/npm/l/winbox.svg"></a> <img src="https://img.shields.io/badge/language-javascript-red"> <img src="https://img.shields.io/badge/language-css-red">
         
-        
-        sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
+sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
 
 # webos
 An open source, modern, lightweight and customizable css/javascript library to manage the DOM as a MacOS-like window
