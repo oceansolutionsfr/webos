@@ -234,8 +234,8 @@ The app parameters of ```webos.add(app)``` is a Javascript object, with the foll
 |Property|Type|Default Value|Description|
 |:--:|:--:|:--:|:--|
 |`color_bottom`|`string`|`#B0B0B0`|The app icon bottom color.|
-|`color_top`|`string`|pad icon (rocket emoji unicase v16)|The app icon top color.|
-|`icon_src`|`string`|`null`|The app icon (an url or a base64 string).|
+|`color_top`|`string`|`#F0F0F0`|The app icon top color.|
+|`icon_src`|`string`|rocket emoji UNI Code v16|The app icon (an url or a base64 string).|
 |`id`*|`string`|`null`|The app id.|
 |`onclick`|`function`|`null`| in case no url is specified, the onclick(event, app) function is used.|
 |`single`|`boolean`|`false`|Display or not the app in a separate window.|
