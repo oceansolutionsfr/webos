@@ -203,8 +203,13 @@ the WebOS repository has the following structure:
 
 The options parameters of ```new WebOS(options)``` is a Javascript object, with the following properties:
 
-|:--:|:--:|:--:|:--:|
+
 |Property|Type|Default Value|Description|
 |:--:|:--:|:--:|:--|
 |`menu`|`boolean`|`false`|Display or not the window menu. The window menu is a bar located at the top of the window and displaying global functions and information (by default date and time).|
+|`dock`|`boolean`|`false`|Display or not the window dock. The window dock is a bar located at the bottom of the window and displaying apps.|
+|`pad`|`boolean`|`false`|Adding or not the window pad to the list of apps. The window pad is a full screen overlay div with a grid containing the apps icons.|
+|`background`|`string`|`null`|Display or not the window pad. The window pad is a bar located at the bottom of the window and displaying running apps (by default the pad app).|
+
+
 </table>
