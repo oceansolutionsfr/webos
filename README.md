@@ -203,17 +203,7 @@ the WebOS repository has the following structure:
 
 The options parameters of ```new WebOS(options)``` is a Javascript object, with the following properties:
 
-<table>
-    <tr>
-        <td>Property</td>
-        <td>Type</td>
-        <td>Default Value</td>
-        <td>Description</td>
-    </tr>
-    <tr>
-        <td>```menu```</td>
-        <td>```boolean```</td>
-        <td>```false```</td>
-        <td>Display or not the window menu. The window menu is a bar located at the top of the window and displaying global functions and information (by default date and time).</td>
-    </tr>
+|:Property:|:Type:|:Default Value:|:Description:|
+|:--:|:--:|:--:|:--:|
+|`menu`|`boolean`|`false`|Display or not the window menu. The window menu is a bar located at the top of the window and displaying global functions and information (by default date and time).|
 </table>
