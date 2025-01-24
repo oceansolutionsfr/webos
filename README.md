@@ -118,7 +118,7 @@ It demonstrates the following features:
 
 ### Include in your HTML
 
-> The use of WebOS requires the winbox.js library (for compatibility reasons, the use of ```lib/winbox.bundle.js``` in highly recommanded), the WebOS CSS and JS latest distribution release.
+> The use of WebOS requires the <a href="https://github.com/nextapps-de/winbox">winbox.js</a> library (for compatibility reasons, the use of ```lib/winbox.bundle.js``` in highly recommanded), the WebOS CSS and JS latest distribution release.
 
 A best practice is to load the winbox library as async and import the WebOS library:
 ```html
