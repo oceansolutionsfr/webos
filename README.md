@@ -96,7 +96,6 @@ It demonstrates the following features:
         <td>winbox.min.js</td>
         <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/dist/latest/webos.min.js" target="_blank">Download</a></td>
     </tr>
-    <tr></tr>
     <tr>
         <td>winbox.min.css</td>
         <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/dist/latest/webos.min.css" target="_blank">Download</a></td>
@@ -109,13 +108,11 @@ It demonstrates the following features:
     <tr>
         <td>ES6 Modules</td>
         <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/src/js/webos.css" target="_blank">Download</a></td>
-        <td>JS source file</td>
     </tr>
     <tr></tr>
     <tr>
         <td>CSS File (source)</td>
         <td><a href="https://raw.githubusercontent.com/oceansolutionsfr/webos/refs/heads/main/src/css/webos.css" target="_blank">Download</a></td>
-        <td>CSS source style used by the library</td>
     </tr>
     <tr></tr>
 </table>
