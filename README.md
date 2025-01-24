@@ -128,20 +128,20 @@ A best practice is to load the winbox library as async and import the WebOS libr
     <link rel="preload" href="./js/winbox.bundle.js" as="script">
 </head>
 <body>
-    <!--
-    
+    <!--    
     HTML CONTENT
-    
     -->
+
     <!-- BOTTOM OF BODY -->
     <script src="./js/winbox.bundle.js" async></script>
+    
     <!-- EMEBED OR EXTERNAL CUSTOM SCRIPTS -->
     <script type="module" defer>
         import {WebOS} from "./js/webos.min.js"
 
-        // you code here
+        // YOUR CODE HERE
 
-    </scipt>
+    </script>
 </body>
 </html>
 ```
