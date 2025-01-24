@@ -154,22 +154,22 @@ A best practice is to load the winbox library as async and import the WebOS libr
 
 ```js
 
-        // initialize an option object
-        const webos_options = {
-            menu: true,
-            dock: true,
-            pad: false,
-            background: "./img/space.jpg"
-        }
+    // initialize an option object
+    const webos_options = {
+        menu: true,
+        dock: true,
+        pad: false,
+        background: "./img/space.jpg"
+    }
 
-        // create a new WebOS instance
-        const webos = new WebOS(webos_options)
+    // create a new WebOS instance
+    const webos = new WebOS(webos_options)
 
-        // add an app to the webos
-        webos.add(/* see Adding apps section */)
+    // add an app to the webos
+    webos.add(/* see Adding apps section */)
 
-        // render the webos in the DOM
-        webos.render()
+    // render the webos in the DOM
+    webos.render()
 ```
 
 
@@ -178,17 +178,17 @@ A best practice is to load the winbox library as async and import the WebOS libr
 > To add apps to WebOS, you must first initialize a ```WebOS``` instance. Once initialized, you can add apps to the OS using the ```add``` method. Only app added before `webos.render()` will be rendered. Refer to the <a href="#app_properties">list of app properties</a>.
 
 ```js
-        // initialize an object
-        const app = {
-            id: "calculator",
-            url: "./app/calculator.html",
-            single: true
-        } 
-        
-        // add an app to the webos
-        webos.add(app)
+    // initialize an object
+    const app = {
+        id: "calculator",
+        url: "./app/calculator.html",
+        single: true
+    } 
+    
+    // add an app to the webos
+    webos.add(app)
 
-        // ...
+    // ...
 ```
 
 
