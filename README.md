@@ -70,7 +70,7 @@ WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do n
 
 ## Demo
 
-The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html">. The code of the demo is available in the ```demo``` directory of the WebOS repository. No support is provided for the demo.
+The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html">here</a>. The code of the demo is available in the ```demo``` directory of the WebOS repository. No support is provided for the demo.
 
 Thanks to <a href="https://oceansolutions.fr">oceansolutions.fr</a> for the hosting of the demo.
 
