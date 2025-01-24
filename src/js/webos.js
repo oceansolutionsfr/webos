@@ -36,7 +36,7 @@ class WebOS {
     dock = null
 
     /** @property :object options @description options of the OS {menu: booelan, dock: boolean, pad: boolean} */
-    options = {}
+    options = {menu: false, dock: false, pad: false, background: null}
 
     /** @property :array single_windows @description list of opened single windows */
     single_windows = []

@@ -151,7 +151,27 @@ A best practice is to load the winbox library as async and import the WebOS libr
 
 ### Initializing and rendering WebOS
 
-> The use of WebOS requires the initialization of a ```WebOS``` instance. The instance is unique for the current page and is shared with all the HTML elements of the windows. The WebOS instance is not shared between navigator tabs.
+> The use of WebOS requires the initialization of a ```WebOS``` instance. The instance is unique for the current page and is shared with all the windows, through the app.webos property. The WebOS instance is not shared between navigator tabs. You can find the reference of the options <a href="#options">here</a>
+
+```js
+        const webos_options = {
+            menu: true,
+            dock: true,
+            pad: false,
+            background: "./img/space.jpg"
+        }
+
+        // create a new WebOS instance
+        const webos = new WebOS(webos_options)
+
+        // render the webos in the DOM
+        webos.render()
+```
+
+
+### Adding apps
+
+> The use of WebOS requires the initialization of a ```WebOS``` instance. The instance is unique for the current page and is shared with all the windows, through the app.webos property. The WebOS instance is not shared between navigator tabs.
 
 ```js
         // create a new WebOS instance
@@ -178,3 +198,22 @@ the WebOS repository has the following structure:
 
 
 ### JavaScript References
+
+<a name="options"></span>
+
+The options parameters of ```new WebOS(options)``` is a Javascript object, with the following properties:
+
+<table>
+    <tr>
+        <td>Property</td>
+        <td>Type</td>
+        <td>Default Value</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>```menu```</td>
+        <td>```boolean```</td>
+        <td>```false```</td>
+        <td>Display or not the window menu. The window menu is a bar located at the top of the window and displaying global functions and information (by default date and time).</td>
+    </tr>
+</table>
