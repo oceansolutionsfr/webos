@@ -1,3 +1,6 @@
+
+sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
+
 # webos
 An open source, modern, lightweight and customizable css/javascript library to manage the DOM as a MacOS-like window
 manager. This library is based on <a href="https://github.com/nextapps-de/winbox/tree/master">WinBox.js</a>.
@@ -164,8 +167,3 @@ the WebOS repository has the following structure:
 
 
 ### JavaScript References
-
-
-# Support WebOS
-
-sponsor on Paypal: <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92">donate</a>
