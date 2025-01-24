@@ -168,4 +168,4 @@ the WebOS repository has the following structure:
 
 # Support WebOS
 
-sponsor on Patreon: <a href="https://www.patreon.com/sebastienmamy/shop/donate-for-webos-958930?source=storefront">donate 10$</a>
+sponsor on Paypal: <a href="https://www.paypal.com/ncp/payment/3DY454BLJ8TVW">donate</a>
