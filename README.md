@@ -94,13 +94,13 @@ It demonstrates the following features:
 the WebOS repository has the following structure:
 ```
 
-├── cli/ // node.js CLI utils (versioning, packaging)
-├── dist/ // disitrbution version
-├── demo/ // example HTML page using WebOS
-├── lib/ // third party dependencies
-└── src/ // PHP 8.3 Rest APIs entry point source code
-├── css/ // WebOS css styles
-└── js/ // WebOS javascript sources
+├── cli/        // node.js CLI utils (versioning, packaging)
+├── dist/       // disitrbution version
+├── demo/       // example HTML page using WebOS
+├── lib/        // third party dependencies
+└── src/        // PHP 8.3 Rest APIs entry point source code
+    ├── css/    // WebOS css styles
+    └── js/     // WebOS javascript sources
 ```
 
 ### CSS styles
