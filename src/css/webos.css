@@ -1,0 +1,303 @@
+/** @build 202501240853 copyright (C) 2025 sebastien.mamy@gmail.com
+ *  @license GNU General Public Licence v2 @disclaimer in no event shall the author be liable for any claim or damages. */
+
+:root {
+
+    --vunit: 2vh;
+    --gold: 1.61803398;
+    --rgold: 1.27201964;
+    --size-xxxxxl: calc(var(--size-xxxxl) * var(--rgold));
+    --size-xxxxl: calc(var(--size-xxxl) * var(--rgold));
+    --size-xxxl: calc(var(--size-xxl) * var(--rgold)); 
+    --size-xxl: calc(var(--size-xl) * var(--rgold));
+    --size-xl: calc(var(--size-l) * var(--rgold));
+    --size-l: calc(var(--vunit) * var(--rgold));
+    --size-r: var(--vunit);
+    --size-s: calc(var(--size-r) / var(--rgold));
+    --size-xs: calc(var(--size-s) / var(--rgold));
+    --size-xxs: calc(var(--size-xs) / var(--rgold));
+    --size-xxxs: calc(var(--size-xxs) / var(--rgold));
+    --size-xxxxs: calc(var(--size-xxxs) / var(--rgold));
+    --size-xxxxxs: calc(var(--size-xxxxs) / var(--rgold));
+
+    --color-1: #000000;
+
+    --color-7-t: #A0A0A080;
+    --color-8: #D0D0D0;
+    --color-9: #FFFFFF;
+}
+
+* {
+    font-family: Roboto, Tahoma, Arial;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/** Dock Styles */
+
+.dock_item:hover, .dock_item:active {
+    transform: scale(2);
+    box-shadow: 0px 0px 5px var(--color-1);
+}
+
+.dock_item:active {
+    filter: brightness(0.5);
+}
+
+
+.dock_item > span {
+    display: none;
+    padding: calc(0.5* var(--size-xxxxs)) 0;
+    position: relative;
+    bottom: calc(var(--size-xxxl) + var(--size-xs));
+    color: var(--color-0);
+    background: var(--color-8);
+    border-radius: 3px;
+    font-size: var(--size-xxxxs);
+    border: none;
+}
+
+.dock_item:hover > span {
+    display: block;
+}
+
+.dock_item:hover > span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--color-8) transparent transparent transparent;
+}
+
+
+.dock_item[active]::after {
+    content: ".";
+    font-size: var(--size-xl);
+    font-weight: 500;
+    bottom: calc(var(--size-r) + 3px);
+    position: relative;
+    color: var(--color-1);
+}
+
+
+
+.dock
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    z-index: 10;
+    padding: var(--size-xxs) 0;
+    font-size: var(--size-xxs);
+}
+
+.dock > div
+{
+    margin: var(--size-xxxs);
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(#FFFFFF40, #FFFFFF20);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: var(--size-xxxs) var(--size-xxxs);
+    border: solid 1px #FFFFFF40;
+}
+
+
+.dock > div > div
+{
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: default;
+    width: var(--size-xxl);
+    height: var(--size-xxl);
+    vertical-align: middle;
+    margin: 0 var(--size-xxxxs);
+    border-radius: 10px;
+}
+.dock > div > div > div 
+{
+    padding-top: calc( 0.5 * var(--size-xxxxxs));
+    font-size: var(--size-l);
+}
+
+.dock > div > div > img
+{
+    width: 100%;
+}
+
+
+.dock > div > div > i:before 
+{
+    line-height: unset;
+    font-size: var(--size-r);
+    margin-top: var(--size-xxxs);
+}   
+
+
+/** menu bar styles */
+
+
+.menu_bar {
+    background: var(--color-7-t);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    width: 100vw;
+    text-align: right;
+}
+
+
+.menu_bar > div {
+    font-size: var(--size-xs);
+    font-weight: 400;
+    padding: var(--size-xxxxs) var(--size-xs);
+    display: inline-block;
+}
+
+/** pad styles */
+
+.pad 
+{
+    width: 86vw;
+    height:86vh;
+    transition: all ease 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:0;
+    padding: 7vh 7vw;
+    text-align: center;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-color: #00000040;
+    gap: 0% 10%;
+    transform: scale(1);
+    opacity: 1;    
+    z-index: 100;
+}
+
+
+.pad > div 
+{
+    margin: 3.5vw;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: var(--size-l);
+    transition: all ease 0.2s;
+    filter: brightness(0.9); 
+    width: 7vw;
+    height: 7vw;
+    display: inline-block;
+}
+
+.pad > div >  img 
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.pad > div > span 
+{
+    display: inline-block;
+    padding: 10% 0%;
+    color: var(--color-8);
+    font-weight: 200;
+}
+
+
+
+.zoomOut {
+    transform: scale(1.5);
+    opacity: 0;
+    z-index: -1;
+}
+
+.pad > div:hover
+{   
+    filter: brightness(1.1);
+}
+
+
+
+/** custom WinBox styles */
+
+
+
+.wb-header {
+    background-color: rgb(224,224,224);
+    color:black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.wb-body {
+    backdrop-filter: blur(100px);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: none;
+}
+
+.wb-min, .wb-max, .wb-full {
+    display: none;
+}
+
+.wb-close {
+    border-radius: 200% 200%;
+    width: 10px;
+    height: 10px;
+    background: rgb(220,220,220);
+    border: solid 1px rgb(180,180,180);
+    left: 10px;
+    top: 11px;
+    position: absolute;
+    transition: all ease 0.1s;
+}
+
+.wb-close:hover {
+    background: rgb(224, 95, 88);
+    border: solid 1px rgb(150, 41, 38);
+}
+
+.wb-close::before {
+    content: 'x';
+    color: #00000000;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: -14px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.wb-close:hover::before {
+    color: rgb(107,8,9);
+}
+
+.wb-title {
+    text-align: center;
+    font-family: var(--font-3);
+    font-weight: 100;
+}
+
+.wb-control {
+    float: left;
+}

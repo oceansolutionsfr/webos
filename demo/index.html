@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebOS > Example</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="shortcut icon" type="image/png" href="./res/material.blur.black.png">
+            <link rel="icon" type="image/png" href="./res/material.blur.black.png">
+            
+            <!-- styles -->
+            <link rel="stylesheet" href="./css/webos.min.css"></link>
+            <link rel="preload" href="./js/winbox.bundle.js" as="script">
+    </head>
+    <body>
+        
+    </body>
+    <script src="./js/winbox.bundle.js" async></script>
+    <script type="module" defer>
+        import {WebOS, App} from "./js/webos.min.js"
+
+        window.webos = new WebOS({menu:true, dock:true, pad: true,background: "./res/Mamy Sébastien, 2013, Pacific Coast Highway.jpg"})
+ 
+        webos.add({
+            color_top: "#F0F0F0",
+            color_bottom: "#B0B0B0",
+            icon_src: "./res/dock-calculator.webp",
+            id: "calculator",
+            url: "./app/calculator.html",
+            single: true,
+            winbox: {
+                width: "400px",
+                height: "620px",
+            }
+        })
+       
+        webos.add({
+            color_top: "#F0F0F0",
+            color_bottom: "#B0B0B0",
+            icon_src: "./res/dock-notepad.png",
+            id: "notepad",
+            url: "./app/notepad.html",
+            single: true
+        })
+
+        webos.add({
+            color_top: "#F0F0F0",
+            color_bottom: "#B0B0B0",
+            icon_src: "./res/material.blur.white.png",
+            id: "oceans",
+            url: "https://oceansolutions.fr",
+            single: true
+        })
+       
+        webos.add({
+            color_top: "rgb(56,34,162)",
+            color_bottom: "rgb(115,188,227)",
+            icon_src: "./res/oceans--white.png",
+            id: "oceans",
+            url: "https://oceansolutions.fr",
+            single: true
+        })
+       
+        webos.add({
+            color_top: "rgb(56,34,162)",
+            color_bottom: "rgb(115,188,227)",
+            icon_src: "./res/material.climate.white.png",
+            id: "climate",
+            url: "https://oceansolutions.fr/climate",
+            single: true
+        })
+
+
+       
+        webos.add({
+            color_top: "#F0F0F0",
+            color_bottom: "#B0B0B0",
+            icon_src: "./res/dock-openstreemap.webp",
+            id: "openstreetmap",
+            onclick: event => window.open("https://www.openstreetmap.org/#map=14/46.21678/6.14385&layers=P")
+        })
+
+        
+       
+        webos.render()
+
+    </script>
+
+</html>
