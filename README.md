@@ -84,7 +84,7 @@ It demonstrates the following features:
 
 ## Getting Started
 
-#### get the latest stable build
+### Get the latest stable build
 
 <table style="width: 100%;">
     <tr>
@@ -102,7 +102,7 @@ It demonstrates the following features:
     </tr>
     <tr>
         <td colspan="2">
-            <br><b><u>Sources:</u></b>  (js and css are separated, js includes icons as base64)
+           <b><u>Sources:</u></b>  (js and css are separated, js includes icons as base64)
         </td>
     </tr>
     <tr>
@@ -116,7 +116,36 @@ It demonstrates the following features:
 </table>
 
 
-### Contribute
+### Include in your HTML
+
+> The use of WebOS requires the winbox.js library (for compatibility reasons, the use of ```lib/winbox.bundle.js``` in highly recommanded), the WebOS CSS and JS latest distribution release.
+
+A best practice is to load the winbox library as async and import the WebOS library:
+```html
+<html>
+<head>
+    <link rel="stylesheet" href="./css/webos.min.css">
+    <link rel="preload" href="./js/winbox.bundle.js" as="script">
+</head>
+<body>
+    <!--
+    
+    HTML CONTENT
+    
+    -->
+    <!-- BOTTOM OF BODY -->
+    <script src="./js/winbox.bundle.js" async></script>
+    <!-- EMEBED OR EXTERNAL CUSTOM SCRIPTS -->
+    <script type="module" defer>
+        import {WebOS} from "./js/webos.min.js"
+
+        // you code here
+
+    </scipt>
+</body>
+</html>
+```
+
 
 ## References
 
