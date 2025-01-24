@@ -205,6 +205,7 @@ the WebOS repository has the following structure:
 ├── dist/       // distribution version
 ├── demo/       // example HTML page using WebOS
 ├── lib/        // third party dependencies
+├── res/        // additional resources (screenshots,..)
 └── src/        // PHP 8.3 Rest APIs entry point source code
     ├── css/    // WebOS css styles
     └── js/     // WebOS javascript sources
@@ -224,6 +225,17 @@ The options parameters of ```new WebOS(options)``` is a Javascript object, with 
 |`pad`|`boolean`|`false`|Adding or not the window pad to the list of apps. The window pad is a full screen overlay div with a grid containing the apps icons.|
 |`background`|`string`|`null`|Display or not the window pad. The window pad is a bar located at the bottom of the window and displaying running apps (by default the pad app).|
 
+### WebOS Methods
+
+`constructor(options = {})`
+Creates a new WebOS instance with the specified <a href="#options">options</a>.
+
+
+`add(app_properties)`
+Adds an app to the OS, with the specified <a href="#app_properties">properties</a>.
+
+`render()`
+Render the WebOS instance.
 
 ### App Properties
 
@@ -240,4 +252,5 @@ The app parameters of ```webos.add(app)``` is a Javascript object, with the foll
 |`onclick`|`function`|`null`| in case no url is specified, the onclick(event, app) function is used.|
 |`single`|`boolean`|`false`|Display or not the app in a separate window.|
 |`url`|`string`|`null`|The app url.|
-|`webos`|`WebOS`|`{}`|The app url.|
+|`webos`|`WebOS`|`null`|The calling WebOS instance.|
+|`winbox`|`object`|`{}`|The WinBox-like <a href="https://github.com/nextapps-de/winbox/tree/master?tab=readme-ov-file#options">options</a> when instancing the winbox used to display the app.|
