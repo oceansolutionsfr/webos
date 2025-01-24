@@ -3,101 +3,62 @@ An open source, modern, lightweight and customizable css/javascript library to m
 manager. This library is based on <a href="https://github.com/nextapps-de/winbox/tree/master">WinBox.js</a>.
 
 WebOS is meant to work on desktop with a min resolution of 1280×720px.
-
-<table class="bc-table bc-table-web">
-    <thead>
-        <tr class="bc-platforms">
-            <td></td>
-            <th class="bc-platform bc-platform-desktop" colspan="5" title="desktop"><span
-                    class="icon icon-desktop"></span><span class="visually-hidden">desktop</span></th>
-        </tr>
-        <tr class="bc-browsers">
-            <td></td>
-            <th class="bc-browser bc-browser-chrome">
-                <div class="bc-head-txt-label bc-head-icon-chrome">Chrome</div>
-                <div class="bc-head-icon-symbol icon icon-chrome"></div>
-            </th>
-            <th class="bc-browser bc-browser-edge">
-                <div class="bc-head-txt-label bc-head-icon-edge">Edge</div>
-                <div class="bc-head-icon-symbol icon icon-edge"></div>
-            </th>
-            <th class="bc-browser bc-browser-firefox">
-                <div class="bc-head-txt-label bc-head-icon-firefox">Firefox</div>
-                <div class="bc-head-icon-symbol icon icon-simple-firefox"></div>
-            </th>
-            <th class="bc-browser bc-browser-opera">
-                <div class="bc-head-txt-label bc-head-icon-opera">Opera</div>
-                <div class="bc-head-icon-symbol icon icon-opera"></div>
-            </th>
-            <th class="bc-browser bc-browser-safari">
-                <div class="bc-head-txt-label bc-head-icon-safari">Safari</div>
-                <div class="bc-head-icon-symbol icon icon-safari"></div>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th class="bc-feature bc-feature-depth-0" scope="row">
-                <div class="bc-table-row-header"><code>WebOS</code></div>
-            </th>
-            <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false"><button
-                    type="button" title="Toggle history">
-                    <div class="bcd-cell-text-wrapper">
-                        <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
-              bc-level-yes
-              icon
-              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
-                        <div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome</span><span
-                                class="bc-version-label" title="Released 2008-12-11">1</span></div>
-                    </div><span class="offscreen">Toggle history</span>
-                </button></td>
-            <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false"><button
-                    type="button" title="Toggle history">
-                    <div class="bcd-cell-text-wrapper">
-                        <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
-              bc-level-yes
-              icon
-              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
-                        <div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge</span><span
-                                class="bc-version-label" title="Released 2015-07-29">12</span></div>
-                    </div><span class="offscreen">Toggle history</span>
-                </button></td>
-            <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false"><button
-                    type="button" title="Toggle history">
-                    <div class="bcd-cell-text-wrapper">
-                        <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
-              bc-level-yes
-              icon
-              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
-                        <div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox</span><span
-                                class="bc-version-label" title="Released 2005-11-29">1.5</span></div>
-                    </div><span class="offscreen">Toggle history</span>
-                </button></td>
-            <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false"><button
-                    type="button" title="Toggle history">
-                    <div class="bcd-cell-text-wrapper">
-                        <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
-              bc-level-yes
-              icon
-              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
-                        <div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera</span><span
-                                class="bc-version-label" title="Released 2008-06-12">9.5</span></div>
-                    </div><span class="offscreen">Toggle history</span>
-                </button></td>
-            <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false"><button
-                    type="button" title="Toggle history">
-                    <div class="bcd-cell-text-wrapper">
-                        <div class="bcd-cell-icons"><span class="icon-wrap"><abbr class="
-              bc-level-yes
-              icon
-              icon-yes" title="Full support"><span class="bc-support-level">Full support</span></abbr></span></div>
-                        <div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari</span><span
-                                class="bc-version-label" title="Released 2007-10-26">3</span></div>
-                    </div><span class="offscreen">Toggle history</span>
-                </button></td>
-        </tr>
-    </tbody>
-</table>
+<div style="width: 100%; text-align: center;">
+    <table class="bc-table bc-table-web">
+        <thead>
+            <tr class="bc-platforms">
+                <td></td>
+                <th class="bc-platform bc-platform-desktop" colspan="5" title="desktop"><span
+                        class="icon icon-desktop"></span><span class="visually-hidden">desktop</span></th>
+            </tr>
+            <tr class="bc-browsers">
+                <td></td>
+                <th class="bc-browser bc-browser-chrome">
+                    <div class="bc-head-txt-label bc-head-icon-chrome">Chrome</div>
+                    <div class="bc-head-icon-symbol icon icon-chrome"></div>
+                </th>
+                <th class="bc-browser bc-browser-edge">
+                    <div class="bc-head-txt-label bc-head-icon-edge">Edge</div>
+                    <div class="bc-head-icon-symbol icon icon-edge"></div>
+                </th>
+                <th class="bc-browser bc-browser-firefox">
+                    <div class="bc-head-txt-label bc-head-icon-firefox">Firefox</div>
+                    <div class="bc-head-icon-symbol icon icon-simple-firefox"></div>
+                </th>
+                <th class="bc-browser bc-browser-opera">
+                    <div class="bc-head-txt-label bc-head-icon-opera">Opera</div>
+                    <div class="bc-head-icon-symbol icon icon-opera"></div>
+                </th>
+                <th class="bc-browser bc-browser-safari">
+                    <div class="bc-head-txt-label bc-head-icon-safari">Safari</div>
+                    <div class="bc-head-icon-symbol icon icon-safari"></div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="bc-feature bc-feature-depth-0" scope="row">
+                    <div class="bc-table-row-header"><code>WebOS</code></div>
+                </th>
+                <td class="bc-support bc-browser-chrome bc-supports-yes bc-has-history" aria-expanded="false">
+                    <div class="bcd-cell-text-wrapper"><div class="bcd-cell-text-copy"><span class="bc-browser-name">Chrome >= 106.0</span></div>
+                </td>
+                <td class="bc-support bc-browser-edge bc-supports-yes bc-has-history" aria-expanded="false">
+                    <div class="bcd-cell-text-wrapper"><div class="bcd-cell-text-copy"><span class="bc-browser-name">Edge >= 116.0</span></div>
+                </td>
+                <td class="bc-support bc-browser-firefox bc-supports-yes bc-has-history" aria-expanded="false">
+                    <div class="bcd-cell-text-wrapper"><div class="bcd-cell-text-copy"><span class="bc-browser-name">Firefox >= 134.0</span></div>
+                </td>
+                <td class="bc-support bc-browser-opera bc-supports-yes bc-has-history" aria-expanded="false">
+                    <div class="bcd-cell-text-wrapper"><div class="bcd-cell-text-copy"><span class="bc-browser-name">Opera >= 115.0</span></div>
+                </td>
+                <td class="bc-support bc-browser-safari bc-supports-yes bc-has-history" aria-expanded="false">
+                    <div class="bcd-cell-text-wrapper"><div class="bcd-cell-text-copy"><span class="bc-browser-name">Safari >= 17.4</span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
         src="https://img.shields.io/npm/l/winbox.svg"></a>
