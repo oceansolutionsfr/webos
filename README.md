@@ -7,7 +7,7 @@ WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do n
 <a target="_blank" href="https://github.com/nextapps-de/winbox/blob/master/LICENSE.md"><img
         src="https://img.shields.io/npm/l/winbox.svg"></a>
 
-### Compatibility
+#### Compatibility
 <div style="width: 100%; text-align: center;">
     <table class="bc-table bc-table-web">
         <thead>
