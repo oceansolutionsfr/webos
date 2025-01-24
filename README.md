@@ -1,7 +1,7 @@
+# webos
 
 <a href="https://github.com/oceansolutionsfr/webos/LICENSE.md"><img src="https://img.shields.io/npm/l/winbox.svg"></a> <img src="https://img.shields.io/badge/languages-javascript%2Fcss-red"> <a href="https://www.paypal.com/donate/?hosted_button_id=TZMEKJU9DGF92"><img src="https://img.shields.io/badge/donate-paypal-blue"></a>
 
-# webos
 An open source, modern, lightweight and customizable css/javascript library to manage the DOM as a MacOS-like window
 manager. This library is based on <a href="https://github.com/nextapps-de/winbox/tree/master">WinBox.js</a>.
 
