@@ -227,14 +227,14 @@ The options parameters of ```new WebOS(options)``` is a Javascript object, with 
 
 ### WebOS Methods
 
-`constructor(options = {})`
+```constructor(options = {})```
 Creates a new WebOS instance with the specified <a href="#options">options</a>.
 
 
-`add(app_properties)`
+```add(app_properties)```
 Adds an app to the OS, with the specified <a href="#app_properties">properties</a>.
 
-`render()`
+```render()```
 Render the WebOS instance.
 
 ### App Properties
