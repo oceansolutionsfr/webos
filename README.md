@@ -225,7 +225,7 @@ The options parameters of ```new WebOS(options)``` is a Javascript object, with 
 
 #### contructor
 Creates a new WebOS instance with the specified <a href="#options">options</a>.\
-**returns** the WebOS instance
+**returns:** the WebOS instance
 
 ```js
 const webos = new WebOS({
@@ -236,7 +236,7 @@ const webos = new WebOS({
 
 #### add
 Adds an app to the OS, with the specified <a href="#app_properties">properties</a>.\
-**returns** the WebOS instance
+**returns:** the WebOS instance
 
 ```js
 const app_properties = {
@@ -251,7 +251,7 @@ webos.add(app_properties)
 
 #### render
 Render the WebOS instance.\
-**returns** the WebOS instance
+**returns:** the WebOS instance
 
 ```js
 webos.render()
