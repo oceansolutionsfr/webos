@@ -72,7 +72,7 @@ WebOS is meant to work on desktop with a minimum resolution of 1280×720px. Do n
 
 ## Demo
 
-The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html" target="_blank">here</a>. The code of the demo is available in the ```demo``` directory of the WebOS repository. No support is provided for the demo.
+The demo is available <a href="https://oceansolutions.fr/webos/demo/index.html" target="_blank">here</a>. The code of the demo is available in the ```src/demo``` directory of the WebOS repository. No support is provided for the demo.
 
 Thanks to <a href="https://oceansolutions.fr" target="_blank">oceansolutions.fr</a> for the hosting of the demo.
 
@@ -197,14 +197,13 @@ A best practice is to load the winbox library as async and import the WebOS libr
 ### repository structure
 the WebOS repository has the following structure:
 ```
-
 ├── cli/        // node.js CLI utils (versioning, packaging)
 ├── dist/       // distribution version
-├── demo/       // example HTML page using WebOS
 ├── lib/        // third party dependencies
 ├── res/        // additional resources (screenshots,..)
 └── src/        // PHP 8.3 Rest APIs entry point source code
     ├── css/    // WebOS css styles
+    ├── demo/   // example HTML page using WebOS
     └── js/     // WebOS javascript sources
 ```
 
