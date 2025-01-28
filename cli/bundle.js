@@ -3,17 +3,8 @@
 
 import fs from "fs"
 
-const PATH = "./src/img/"
-const TARGET_FILE = "./temp.js"
-
-fs.unlinkSync(TARGET_FILE)
-fs.appendFileSync(TARGET_FILE, "const images = {}\n")
-
-// adding images
-fs.readdir(PATH, (err, files) => files.forEach(file => fs.appendFileSync(TARGET_FILE, "images[\"" + file + "\"] = \"data:image/gif;base64," + fs.readFileSync(PATH+"/"+file, 'base64') + "\"\n")))
+const PATH = "./tmp/icon.webp"
 
 
-// adding styles
-
-const css = fs.readFileSync("./css/webos.css", "utf8")
+console.log("\"data:image/webp;base64," + fs.readFileSync(PATH, "base64") + "\"\n")
 
