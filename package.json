@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "clean": "find . -name ._* -delete ; find . -name .DS_Store -delete ; rm -Rf tmp/*  ",
+    "clean": "cd .. ; find . -name ._* -delete ; find . -name .DS_Store -delete ; rm -Rf tmp/* ; rm -Rf logs/* ; cd webos ",
     "commit": "npm run clean && git add . --all && git commit && git push origin main",
     "update": "git pull origin-lab main",
     "php": "printf '🌊 Ocean Solutions\n   starting PHP 8.3 on http://localhost:9000\n,   base directory: '$(pwd)'\n' && php -q -S localhost:9000 &",
@@ -9,10 +9,8 @@
   },
   "dependencies": {
     "@node-minify/clean-css": "^9.0.1",
+    "@node-minify/core": "^9.0.2",
+    "@node-minify/uglify-js": "^9.0.1",
     "public-repo": "github:nextapps-de/winbox.git"
-  },
-  "devDependencies": {
-    "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
   }
 }

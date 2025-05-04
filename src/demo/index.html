@@ -9,16 +9,55 @@
             
             <!-- styles -->
             <link rel="stylesheet" href="../css/webos.css">
-            <link rel="preload" href="../../lib/winbox.bundle.js" as="script">
+            <link rel="preload" href="../js/winbox.bundle.js" as="script">
     </head>
     <body>
         
     </body>
-    <script src="../../lib/winbox.bundle.js" async></script>
+    <script src="../js/winbox.bundle.js" async></script>
     <script type="module" defer>
-        import {WebOS, App} from "../js/webos.js"
+        import {WebOS} from "../js/webos.js"
 
-        window.webos = new WebOS({login: true, menu:true, dock:true, pad: true,background: "./img/Mamy Sébastien, 2013, Pacific Coast Highway.jpg"})
+        // const auth_wrapper = {}
+        // auth_wrapper.login = (email, password) => {
+        //     console.log(email, password)
+        //     return new Response({session_id: "sx000001"},{status: 200}) 
+        // }
+
+
+
+        // auth_wrapper.signin = (email, password) => {
+        //     return {status: 201}
+        // }
+
+        // auth_wrapper.confirmEmail = (email, confirmation_code) => {
+        //     return {}
+        // }
+
+        // auth_wrapper.updatePassword = (email, change_code, password) => {
+        // }
+
+        // auth_wrapper.close = (email) => {
+        // }
+
+
+
+
+        window.webos = WebOS({
+            terms: {
+                firm: "Ocean Solutions SAS",
+                juridiction: "France",
+                photo_credits: "Sébastien Jean Mamy",
+                photo_credits_url: "https://sebastien-mamy.fr"
+            }, 
+            login: false, 
+            menu:true, 
+            dock:true, 
+            pad: true,
+            backgroundImage: "./img/US2009CL1051-3648-2736-Arches National Park.webp",
+            support_email: "info@oceansolutions.fr",
+            // auth_wrapper
+        })
  
 
         webos.add({
@@ -26,39 +65,12 @@
             color_bottom: "#B0B0B0",
             icon_src: "./img/dock-calculator.webp",
             id: "calculator",
-            url: "./app/calculator.html",
-            single: true,
-            winbox: {
+            url: "./apps/calculator.html",
+            single: false,
+            winbox_options: {
                 width: "400px",
                 height: "620px",
             }
-        })
-       
-        webos.add({
-            color_top: "#F0F0F0",
-            color_bottom: "#B0B0B0",
-            icon_src: "./img/dock-notepad.png",
-            id: "notepad",
-            url: "./app/notepad.html",
-            single: true
-        })
-
-        webos.add({
-            color_top: "#F0F0F0",
-            color_bottom: "#B0B0B0",
-            icon_src: "./img/material.blur.white.png",
-            id: "oceans",
-            url: "https://oceansolutions.fr",
-            single: true
-        })
-       
-        webos.add({
-            color_top: "rgb(56,34,162)",
-            color_bottom: "rgb(115,188,227)",
-            icon_src: "./img/oceans--white.png",
-            id: "oceans",
-            url: "https://oceansolutions.fr",
-            single: true
         })
        
         webos.add({
@@ -66,6 +78,7 @@
             color_bottom: "rgb(115,188,227)",
             icon_src: "./img/material.climate.white.png",
             id: "climate",
+            title:"Ocean Climate",
             url: "https://oceansolutions.fr/climate",
             single: true
         })
@@ -75,13 +88,16 @@
             color_bottom: "#B0B0B0",
             icon_src: "./img/dock-openstreemap.webp",
             id: "openstreetmap",
-            // onclick: event => window.open("https://www.openstreetmap.org/#map=14/46.21678/6.14385&layers=P")
-            url: "https://www.openstreetmap.org/#map=14/46.21678/6.14385&layers=P"
+            onclick: event => window.open("https://www.openstreetmap.org/#map=14/46.21678/6.14385&layers=P")
         })
 
         
        
-        webos.render()
+        document.addEventListener("DOMContentLoaded", event => {
+            webos.render()
+        })
+
+       
 
     </script>
 

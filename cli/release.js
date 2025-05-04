@@ -17,7 +17,7 @@ const release_type = process.argv[2] || "minor"
 fs.readdirSync(VERSIONS_FOLDER).forEach(file => versions.push(file))
 
 versions.sort()
-const current_version = versions[versions.length - 1]
+const current_version = versions.length > 0 ?  versions[versions.length - 1] : "0.0"
 
 const major = current_version.split(".")[0]
 const minor = current_version.split(".")[1]

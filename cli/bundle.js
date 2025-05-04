@@ -3,8 +3,10 @@
 
 import fs from "fs"
 
-const PATH = "./tmp/icon.webp"
+//const PATH = "../tmp/icon.webp"
+const PATH = "../tmp/icon.png"
 
 
-console.log("\"data:image/webp;base64," + fs.readFileSync(PATH, "base64") + "\"\n")
+// console.log("\"data:image/webp;base64," + fs.readFileSync(PATH, "base64") + "\"\n")
+console.log("\"data:image/png;base64," + fs.readFileSync(PATH, "base64") + "\"\n")
 

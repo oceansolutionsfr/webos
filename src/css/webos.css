@@ -170,6 +170,7 @@ body {
     font-weight: 400;
     padding: var(--size-xxxxs) var(--size-xs);
     display: inline-block;
+    color: #FFFFFFD0;
 }
 
 /** pad styles */
@@ -300,4 +301,171 @@ body {
 
 .wb-control {
     float: left;
+}
+
+
+/** date and time styles */
+#__login #__date_time {
+    width: 100vw;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    color: var(--color-8);
+    font-weight: 200;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    cursor: default;
+}
+
+#date_time_date {
+    font-size: 3vh;
+    font-weight: 400;
+    color: white;
+    cursor: default;
+}
+
+#date_time_time {
+    color: white;
+    font-size: 8vh;
+    font-weight: 600;
+    cursor: default;
+}
+
+/** login styles **/
+
+#__login {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0;
+    text-align: center;
+    padding:0;
+}
+
+#__login > .auth {
+    position: absolute;
+    bottom: 15vh;
+    text-align: center;
+    width: 100vw;
+}
+
+#__login > .auth > div > img {
+    /* background: #C0C0C020; */
+    backdrop-filter: blur(5px);
+    height: 4vh;
+    /* width: 4vh; */
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4vh;
+    border: none;
+}
+
+#__login > .auth > div > img:hover {
+    background: #FFFFFF30;
+    backdrop-filter: blur(50px);
+}
+
+
+
+
+
+#__terms {
+    position: absolute;
+    width: 100vw;
+    bottom: 5vh;
+    color: #FFFFFFA0;
+    font-weight: 200;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+#__terms:hover {
+    color: #FFFFFFFF;
+}
+
+.terms-content {
+    padding: 3vh 3vw;
+    background: #FFFFFFF0;
+    color: black;
+    font-weight: 100;
+    font-size: var(--size-r);
+}
+
+
+.terms-content > a,.terms-content > a:visited {
+    color: black;
+}
+
+
+div.winbox.login {
+    box-shadow: none;
+}
+
+div.winbox.login > div.wb-header {
+    display: none;
+}
+
+div.winbox.login > div.wb-body {
+    backdrop-filter: none;
+}
+
+
+div.winbox.login > div.wb-body > div {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-weight: 100;
+}
+
+
+
+div.input {
+
+    width: 30%;
+    margin: auto;
+    text-align: left;
+}
+
+div.input > div {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: var(--size-r);
+    padding: var(--size-xs) var(--size-xs) var(--size-xxxxxs) var(--size-xs);
+    font-weight: 200;
+    cursor: default;
+}
+
+div.input > input {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    box-shadow: none;
+    border: 1px solid white;
+    border-radius: 5vh;
+    font-size: var(--size-r);
+    padding: var(--size-xxxxxs) var(--size-xs);
+    backdrop-filter: blur(5px);
+    font-weight: 200;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+input.error {
+    border-color: #D00010 !important;
+}
+
+input.valid {
+    /* border-color: #00D010 !important; */
+    border-color: white;
 }
